@@ -1,6 +1,7 @@
-/**
- * Establishes connection with the game server
- */
-const { connect } = require('./client')
+const { connect } = require('./client');
+const setupInput = require('./setupInput');
+
 console.log('Connecting ...');
 connect();
+
+setupInput();
